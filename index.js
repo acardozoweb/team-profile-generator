@@ -5,18 +5,15 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
-// create main HTML
-const generateHTML = require("./src/template");
+const generateCards = require("./src/template");
 
 // writefile
 const writeFile = require("./src/writefile");
-const generateCards = require("./src/template");
 
 const employeeArray = [];
 
-const promptManager = () => {
-  return inquirer
-    .prompt([
+const addManager = () => {
+  return inquirer.prompt([
       {
         type: "input",
         name: "name",
@@ -32,36 +29,36 @@ const promptManager = () => {
       {
         type: "input",
         name: "id",
-        message: "Enter manager ID",
+        message: "Enter manager ID:",
         validate: (idInput) => {
           if (idInput) {
             return true;
           } else {
-            console.log("Manager ID required:");
+            console.log("Manager ID required.");
           }
         },
       },
       {
         type: "input",
         name: "email",
-        message: "Enter manager email",
+        message: "Enter manager email:",
         validate: (emailInput) => {
           if (emailInput) {
             return true;
           } else {
-            console.log("Manager email required:");
+            console.log("Manager email required.");
           }
         },
       },
       {
         type: "input",
         name: "office",
-        message: "Enter manger office number",
+        message: "Enter manger office number:",
         validate: (officeNumberInput) => {
           if (officeNumberInput) {
             return true;
           } else {
-            console.log("Manager office number required:");
+            console.log("Manager office number required.");
           }
         },
       },
@@ -98,53 +95,52 @@ const addEngineer = () => {
   // if (!portfolioData.projects) {
   //     portfolioData.projects = [];
   // }
-  return inquirer
-    .prompt([
+  return inquirer.prompt([
       {
         type: "input",
         name: "engineerName",
-        message: "Enter engineer name",
+        message: "Enter engineer name:",
         validate: (nameInput) => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Engineer name required:");
+            console.log("Engineer name required.");
           }
         },
       },
       {
         type: "input",
         name: "engineerId",
-        message: "Enter engineer ID",
+        message: "Enter engineer ID:",
         validate: (idInput) => {
           if (idInput) {
             return true;
           } else {
-            console.log("Engineer ID required:");
+            console.log("Engineer ID required.");
           }
         },
       },
       {
         type: "input",
         name: "engineerEmail",
-        message: "Enter engineer email",
+        message: "Enter engineer email:",
         validate: (emailInput) => {
           if (emailInput) {
             return true;
           } else {
-            console.log("Engineer email required:");
+            console.log("Engineer email required.");
           }
         },
       },
       {
         type: "input",
         name: "github",
-        message: "Enter engineer GitHub username",
+        message: "Enter engineer GitHub username:",
         validate: (githubInput) => {
           if (githubInput) {
             return true;
           } else {
-            console.log("Engineer GitHub username required:");
+            console.log("Engineer GitHub username required.");
           }
         },
       },
@@ -164,7 +160,7 @@ const addEngineer = () => {
       if (addEmployee === "Engineer") {
         return addEngineer();
       } else if (addEmployee === "Intern") {
-        return addIntern;
+        return addIntern();
       } else {
         return employeeArray;
       }
@@ -178,55 +174,53 @@ const addIntern = () => {
 ////////////////////////
 `);
 
-  // if (!portfolioData.projects) {
-  //     portfolioData.projects = [];
-  // }
+
   return inquirer.prompt([
     {
       type: "input",
       name: "internName",
-      message: "Enter intern name",
+      message: "Enter intern name:",
       validate: (nameInput) => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Intern name required:");
+          console.log("Intern name required.");
         }
       },
     },
     {
       type: "input",
       name: "internId",
-      message: "Enter intern ID",
+      message: "Enter intern ID:",
       validate: (idInput) => {
         if (idInput) {
           return true;
         } else {
-          console.log("Intern id required:");
+          console.log("Intern id required.");
         }
       },
     },
     {
       type: "input",
       name: "internEmail",
-      message: "Enter intern email",
+      message: "Enter intern emai:",
       validate: (emailInput) => {
         if (emailInput) {
           return true;
         } else {
-          console.log("Intern email required:");
+          console.log("Intern email required.");
         }
       },
     },
     {
       type: "input",
       name: "school",
-      message: "Enter intern school name",
+      message: "Enter intern school name:",
       validate: (schoolInput) => {
         if (schoolInput) {
           return true;
         } else {
-          console.log("Intern school required:");
+          console.log("Intern school required.");
         }
       },
     },
