@@ -63,7 +63,7 @@ let generateInt= intern => {
 
 // function to generate MAIN HTML
 
-const generateMain = (cards) => {
+const generateHTML = (cards) => {
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +94,7 @@ const generateMain = (cards) => {
 
 // loop to generate cards per role
 
-const generateMain = data => {
+const generateCards = data => {
 
     let cards = {};
 
@@ -112,7 +112,7 @@ const generateMain = data => {
             cards.push(intCard)
         }
     }
-    return generateMain(cards);
+    return generateHTML(cards);
 }
 
 
@@ -120,4 +120,4 @@ const generateMain = data => {
 
 
 
-module.exports = generateMain;
+module.exports = generateCards;
