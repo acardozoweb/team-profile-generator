@@ -8,11 +8,11 @@ A Node.js command-line application that takes in information about employees on 
 
 # Table of Contents
 
-*[Installation](*installation)
-*[Usage](*usage)
-*[License](*license)
-*[Contributions](*contributions)
-*[Questions](*questions)
+* [Installation](*installation)
+* [Usage](*usage)
+* [License](*license)
+* [Contributions](*contributions)
+* [Questions](*questions)
 
 <img width="1413" alt="Screen Shot 2021-09-29 at 6 53 38 PM" src="https://user-images.githubusercontent.com/83983013/135359475-f1f126cb-8693-4c20-b56a-647fcd2a62c2.png">
 
