@@ -233,7 +233,7 @@ const addIntern = () => {
     {
       type: "list",
       name: "addEmployee",
-      message: "What type of employee would you like to add to your team?",
+      message: "Would you like to add any other employees to your team?",
       choices: ["Engineer", "Intern", "Done"],
     },
   ])

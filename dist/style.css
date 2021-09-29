@@ -1,0 +1,26 @@
+header {
+    background-color: lavender;
+    color: lightseagreen;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    border-bottom: 3px solid black;    
+}
+
+.card {
+    margin-bottom: 50px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card-header {
+    text-align: center;
+    color: lightseagreen;
+    background-color: lavender;
+}
+
+.git a {
+    text-decoration: none;
+}
