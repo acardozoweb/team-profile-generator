@@ -1,6 +1,5 @@
 # Team-Profile-Generator
 
-![License](https://img.shields.io/badge/License-MIT-<blue>)
 
 # Description
 
@@ -36,7 +35,6 @@ Check out this walkthrough video: https://watch.screencastify.com/v/oKTpzkEEvytc
 # License
 
 ![License](https://img.shields.io/badge/License-MIT-<blue>)
-This app is covered under the MIT license.
 
 
 # Contributions
