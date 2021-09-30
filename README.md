@@ -30,7 +30,7 @@ node index.js
 
 # Usage
 
-Check out this walkthrough video:
+Check out this walkthrough video: https://watch.screencastify.com/v/oKTpzkEEvytccwmOSZZJ
 
 
 # License
