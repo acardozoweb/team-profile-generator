@@ -12,6 +12,8 @@ const writeFile = require("./src/writefile");
 
 const employeeArray = [];
 
+
+
 const addManager = () => {
   return inquirer.prompt([
       {
@@ -52,8 +54,8 @@ const addManager = () => {
       },
       {
         type: "input",
-        name: "office",
-        message: "Enter manger office number:",
+        name: "officeNumber",
+        message: "Enter manager office number:",
         validate: (officeNumberInput) => {
           if (officeNumberInput) {
             return true;
@@ -85,6 +87,8 @@ const addManager = () => {
     });
 };
 
+
+
 const addEngineer = () => {
   console.log(`
 /////////////////////////
@@ -92,13 +96,10 @@ const addEngineer = () => {
 /////////////////////////
 `);
 
-  // if (!portfolioData.projects) {
-  //     portfolioData.projects = [];
-  // }
   return inquirer.prompt([
       {
         type: "input",
-        name: "engineerName",
+        name: "name",
         message: "Enter engineer name:",
         validate: (nameInput) => {
           if (nameInput) {
@@ -110,7 +111,7 @@ const addEngineer = () => {
       },
       {
         type: "input",
-        name: "engineerId",
+        name: "id",
         message: "Enter engineer ID:",
         validate: (idInput) => {
           if (idInput) {
@@ -122,7 +123,7 @@ const addEngineer = () => {
       },
       {
         type: "input",
-        name: "engineerEmail",
+        name: "email",
         message: "Enter engineer email:",
         validate: (emailInput) => {
           if (emailInput) {
@@ -167,6 +168,8 @@ const addEngineer = () => {
     });
 };
 
+
+
 const addIntern = () => {
   console.log(`
 ////////////////////////
@@ -174,11 +177,10 @@ const addIntern = () => {
 ////////////////////////
 `);
 
-
   return inquirer.prompt([
     {
       type: "input",
-      name: "internName",
+      name: "name",
       message: "Enter intern name:",
       validate: (nameInput) => {
         if (nameInput) {
@@ -190,7 +192,7 @@ const addIntern = () => {
     },
     {
       type: "input",
-      name: "internId",
+      name: "id",
       message: "Enter intern ID:",
       validate: (idInput) => {
         if (idInput) {
@@ -202,8 +204,8 @@ const addIntern = () => {
     },
     {
       type: "input",
-      name: "internEmail",
-      message: "Enter intern emai:",
+      name: "email",
+      message: "Enter intern email:",
       validate: (emailInput) => {
         if (emailInput) {
           return true;

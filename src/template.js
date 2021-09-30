@@ -81,7 +81,7 @@ const generateHTML = (cards) => {
   </head>
   <body>
       <header>
-          <h1>My Team</h1>
+          <h1 class="fab fa-pied-piper">My Team</h1>
       </header>
       <div class="row">
           ${cards}
